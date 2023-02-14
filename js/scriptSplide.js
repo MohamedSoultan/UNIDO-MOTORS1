@@ -8,7 +8,7 @@ var awarness_guids = new Splide(".awarness_guids", {
       perPage: 1,
       pagination: false,
     },
-    992: {
+    1000: {
       perPage: 2,
     },
     1350: {
@@ -27,7 +27,7 @@ var awarness_posts = new Splide(".awarness_posts", {
       perPage: 1,
       pagination: false,
     },
-    992: {
+    1000: {
       perPage: 2,
     },
     1350: {
@@ -42,7 +42,7 @@ var awarness_recomand = new Splide(".awarness_reco", {
   gap: "2rem",
   perPage: 2,
   breakpoints: {
-    992: {
+    1000: {
       perPage: 1,
     },
     1350: {

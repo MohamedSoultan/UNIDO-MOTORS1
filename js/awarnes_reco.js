@@ -8,7 +8,7 @@ var awarness_reco = new Splide(".awarness_reco", {
         perPage: 1,
         pagination: false,
       },
-      992: {
+      1000: {
         perPage: 2,
       },
     },

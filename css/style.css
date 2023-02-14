@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 80px 10px;
+  padding: 40px 64px 20px;
 }
 .logo {
   display: flex;
@@ -249,7 +249,9 @@
   top: 110px;
 }
 /*End right corner  */
-
+.nav-container.show .menu-icon span {
+  background-color: #1a1a1a;
+}
 /* burger icon */
 .menu-icon {
   width: 30px;
@@ -1718,7 +1720,7 @@ td {
 .nav-container.show {
   background-color: #fff;
   color: var(--main-color);
-  display: flex !important;
+  display: flex;
 }
 .nav-container.show a {
   color: #222 !important;
@@ -1764,11 +1766,11 @@ td {
   font-weight: bold;
   margin: 24px 0 64px;
 }
-.inputs,.outputs {
-  border: 1px solid #CCCCCC;
+.inputs,
+.outputs {
+  border: 1px solid #cccccc;
   padding: 40px 24px;
   width: 100%;
-
 }
 .form_inputs label {
   font-size: 16px;
@@ -1781,7 +1783,7 @@ td {
 }
 .inputDiv_inputs select {
   padding: 14px 32px;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   width: 100%;
   background-color: #fff;
 }
@@ -1789,7 +1791,7 @@ td {
   width: 100%;
   border: none;
   background-color: #fff;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   padding: 14px 32px;
 }
 .outputs {
@@ -1799,7 +1801,7 @@ td {
 .total_price_after_calc {
   font-weight: bold;
 }
- 
+
 .description_after_clac {
   margin-top: 100px;
   font-size: 18px !important;
@@ -1817,10 +1819,8 @@ td {
 }
 
 .financialInstitutions {
-  background-color: #ECECEC;
+  background-color: #ececec;
 }
-
-
 
 .branding {
   padding: 86px 0 150px;

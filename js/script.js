@@ -3,12 +3,15 @@
 // burger icon
 let menuIcon = document.querySelector(".menu-icon");
 let navContainer = document.querySelector(".nav-container");
+let navigationContainer= document.querySelector(".navigation_container");
 
 menuIcon.addEventListener("click", () => {
+  navigationContainer.classList.toggle("active")
   navContainer.classList.toggle("active");
   menuIcon.classList.toggle("active");
 });
 
+console.log (navigationContainer)
 //End meun toggle
 
 var swiper = new Swiper(".slide-content", {
@@ -43,8 +46,7 @@ var swiper = new Swiper(".slide-content", {
 
 //  Caruosel slider has 2 btn above slider
 let next = document.querySelector(".next");
-let perv = document.querySelector
-(".prev");
+let perv = document.querySelector(".prev");
 
 // perv and next bts
 next.addEventListener("click", () => {

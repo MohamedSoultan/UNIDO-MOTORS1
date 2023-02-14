@@ -3,9 +3,9 @@
   html {
     font-size: 55%;
   }
-  .hero-section {
+  /* .hero-section {
     padding: 30px 24px 0;
-  }
+  } */
   .about {
     grid-template-columns: 1fr;
   }
@@ -25,16 +25,136 @@
     font-size: 4.2rem;
   }
 }
-@media (max-width: 68em) {
-  .hero-nav {
-    display: none !important;
+
+@media (max-width: 1000px) {
+  .nav-container,
+  .nav-container.show {
+    display: block !important;
   }
-  .menu-icon {
-    display: block;
+  .top-nav {
+    position: absolute;
+    right: 64px;
+    top: 102px;
+  }
+  .logo {
+    margin-bottom: 24px;
+  }
+  .list-links {
+    gap: 12px;
+  }
+  .hero-input {
+    width: 90%;
   }
 }
 /* 800px */
 @media (max-width: 50em) {
+  .nav-container,
+  .nav-container.show {
+    display: flex !important;
+    padding: 24px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  /*Start media Navgation */
+  .src-logo {
+    /* content: url(../images/mobile-images/logo-mobile.png); */
+    height: 80px;
+  }
+  .logo-text {
+    padding: 0 12px;
+  }
+  .lo {
+    font-size: 18px;
+  }
+  .lang-en::after {
+    content: "GLISH";
+  }
+  .login_user {
+    content: url(../images/mobile-images/Icon\ feather-user.svg);
+  }
+  .social-links_menu {
+    position: relative;
+    opacity: 1;
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .menu-icon {
+    display: block !important;
+    z-index: 11;
+  }
+  .nav-container.show .navigation_container {
+    display: none !important;
+  }
+  .navigation_container {
+    display: none;
+  }
+  .nav-container.active .navigation_container {
+    display: block;
+  }
+  .nav-container.active .navigation_container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    color: #1a1a1a;
+    background-color: #fff;
+    z-index: 10;
+  }
+  /* 
+  1- انقل النفجيشن في كل السكاشن وتشوف حل ليها
+  4- تعدل التوب ناف تنزله تحت المنيو ليست
+  3- كبر اللوجه شويه في ال800 بكسل done
+  2- تعدل المنيو ايكون في اخر الشاشه done
+  */
+
+  .nav-container.active .logo {
+    width: 100%;
+    z-index: 30;
+    color: var(--main-color);
+  }
+  .nav-container.active .top-nav {
+    margin-top: 24px;
+    text-align: left;
+    flex-direction: column;
+    order: 2;
+    gap: 0;
+  }
+  .nav-container.active .bottom-nav {
+    margin: 0 24px;
+    margin-top: 90px;
+    border-top: none;
+    border-bottom: 1px solid #aaa;
+    text-align: left !important;
+  }
+  .nav-container.active .nav-languages .div {
+    margin-bottom: 12px;
+  }
+  .nav-container.active .bottom-nav li {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .nav-container.active .nav-languages {
+    display: block;
+  }
+  .nav-container.active .logo-text {
+    border-right: 1px solid #aaa;
+  }
+  .list-links,
+  .nav-languages {
+    display: block;
+  }
+  .nav-login a,
+  .nav-languages a,
+  .list-links a {
+    color: #000;
+  }
+  /*End media Navgation */
+
   .form-search-bar input[type="text"] {
     width: 250px;
   }
@@ -64,6 +184,9 @@
   }
   .about {
     margin-top: 60rem;
+  }
+  .hero-input {
+    width: 80%;
   }
 }
 
@@ -160,9 +283,7 @@
     margin-bottom: 24px;
     width: 200%;
   }
-  .searchBar-hero {
-    max-width: 100%;
-  }
+
   .hero-input {
     width: 70%;
     padding: 6px 12px;
@@ -178,9 +299,7 @@
     right: -23px;
   }
   /*Start media Navgation */
-  .src-logo {
-    content: url(../images/mobile-images/logo-mobile.png);
-  }
+
   .logo-text {
     padding: 0 12px;
   }
@@ -233,8 +352,7 @@
     gap: 0;
   }
   .nav-container.active .bottom-nav {
-    margin: 0 24px;
-    margin-top: 90px;
+    margin: 0 24px 115px;
     border-top: none;
     border-bottom: 1px solid #aaa;
     text-align: left !important;
@@ -401,11 +519,6 @@
     margin: 0;
     padding: 8px 10px;
   }
-
-  /* End products section */
-}
-
-@media (max-width: 576px) {
   .guides {
     grid-template-columns: 1fr;
   }
@@ -446,5 +559,11 @@
   .wrapperBox {
     display: block !important;
     justify-content: center;
+  }
+
+  /* End products section */
+  .logo-footer {
+    justify-content: center;
+    margin: 0 0 12px 0;
   }
 }
