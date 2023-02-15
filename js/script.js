@@ -3,20 +3,20 @@
 // burger icon
 let menuIcon = document.querySelector(".menu-icon");
 let navContainer = document.querySelector(".nav-container");
-let navigationContainer= document.querySelector(".navigation_container");
+let navigationContainer = document.querySelector(".navigation_container");
 
 menuIcon.addEventListener("click", () => {
-  navigationContainer.classList.toggle("active")
+  navigationContainer.classList.toggle("active");
   navContainer.classList.toggle("active");
   menuIcon.classList.toggle("active");
 });
 
-console.log (navigationContainer)
+console.log(navigationContainer);
 //End meun toggle
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
-  spaceBetween: 25,
+  spaceBetween: 30,
   loop: true,
   centerSlide: "true",
   fade: "true",
@@ -32,10 +32,10 @@ var swiper = new Swiper(".slide-content", {
   },
 
   breakpoints: {
-    520: {
+    0: {
       slidesPerView: 1,
     },
-    1000: {
+    800: {
       slidesPerView: 2,
     },
     1200: {

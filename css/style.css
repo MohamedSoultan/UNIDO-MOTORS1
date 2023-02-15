@@ -1,3 +1,22 @@
+/* stacky nav */
+.nav-container.show {
+  background-color: #fff;
+  color: var(--main-color);
+}
+.nav-container.show a {
+  color: #222 !important;
+}
+.nav-container.show a:hover {
+  color: var(--main-color) !important;
+}
+
+.nav-container.show svg {
+  color: #000;
+}
+.nav-container.show .menu-icon span {
+  background-color: #1a1a1a;
+}
+/* stacky nav */
 /*////////////////////////////////////////////////////////////////////////////////////////////////// Start hero section */
 /* Start Navgation */
 .hero-section {
@@ -249,9 +268,7 @@
   top: 110px;
 }
 /*End right corner  */
-.nav-container.show .menu-icon span {
-  background-color: #1a1a1a;
-}
+
 /* burger icon */
 .menu-icon {
   width: 30px;
@@ -869,6 +886,7 @@ td {
   cursor: pointer;
   transition: all 0.3s;
   font-size: 24px;
+  margin-bottom: 48px;
 }
 .btn-hero_slider a {
   text-decoration: none;
@@ -1502,10 +1520,9 @@ td {
     url(../images/in_profile_images/bg-New\ Supplier\ Registration2.png);
   background-size: cover;
 }
-.right_header_user6_newSupplierRegistration1 {
-  position: absolute;
-  right: 302px;
-  top: 0;
+
+.right_header_user6 {
+  margin-top: -13px;
 }
 .header_logo_user6_heade_user_newSupplierRegistration1 {
   background-color: #fff;
@@ -1521,6 +1538,9 @@ td {
 }
 .hereText_newSupplierRegistration1 {
   font-size: 16px;
+}
+.container_logo_newSupplierRegistration1 {
+  margin-bottom: 150px;
 }
 /* end user4 section */
 /* Thanks  */
@@ -1653,8 +1673,26 @@ td {
 /* Visa section */
 
 /* Login and sgin in */
+
+.head_login {
+  position: relative;
+  z-index: 1;
+}
+.right_header_user6Login {
+  position: absolute;
+}
+.btn_backLogin {
+  position: absolute;
+  left: 67px;
+  top: 48px;
+}
+.right_header_user6Login {
+  position: absolute;
+  right: 5%;
+  top: 0;
+}
 .formLogin {
-  padding: 0 150px 0 120px !important;
+  padding-top: 150px;
 }
 .titleLogin {
   margin-bottom: 64px;
@@ -1716,23 +1754,6 @@ td {
   background-position: bottom;
 }
 /* Business Development */
-/* stacky nav */
-.nav-container.show {
-  background-color: #fff;
-  color: var(--main-color);
-  display: flex;
-}
-.nav-container.show a {
-  color: #222 !important;
-}
-.nav-container.show a:hover {
-  color: var(--main-color) !important;
-}
-
-.nav-container.show svg {
-  color: #000;
-}
-/* stacky nav */
 /* Newsupplier */
 .withData {
   width: 100%;
@@ -1769,7 +1790,7 @@ td {
 .inputs,
 .outputs {
   border: 1px solid #cccccc;
-  padding: 40px 24px;
+  padding: 40px 24px !important;
   width: 100%;
 }
 .form_inputs label {
@@ -1793,6 +1814,11 @@ td {
   background-color: #fff;
   border: 1px solid #cccccc;
   padding: 14px 32px;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .outputs {
   width: 100%;

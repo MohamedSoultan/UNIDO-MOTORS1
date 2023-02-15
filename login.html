@@ -15,53 +15,19 @@
     <title>Login in</title>
   </head>
   <body>
-    <section class="loginContainer d-flex align-items-center">
-      <div class="formLogin col-6 container">
-        <div class="back_btn back_btnLogin d-flex align-items-center gap-5">
+    <section class="loginContainer">
+      <header class="head_login">
+        <div class="btn_backLogin d-flex align-center gap-3 text-dark">
           <a href="./index.html"
-            ><img src="./images/in_profile_images/backTohome-white.png" alt=""
+            ><img
+              src="./images/in_profile_images/back_to_home-white.svg"
+              alt=""
           /></a>
-          <span class="backToWebsite">Back to Home Page</span>
+          <span class="backToWebsite">Back to Website</span>
         </div>
-        <h3 class="titleLogin">Login</h3>
-        <form action="">
-          <div class="inputDiv">
-            <label class="d-block mb-3" for="UserName">User Name*</label>
-            <input type="text" placeholder="Email" id="UserName" />
-          </div>
-          <div class="inputDiv">
-            <label class="d-block mb-3" for="Password">Password*</label>
-            <input
-              value="12345"
-              type="password"
-              placeholder="Email"
-              id="Password"
-            />
-          </div>
-          <div>
-            <p class="forgetPass">
-              <a href="#" class="text-dark" href="#">Forget Password</a>
-            </p>
-            <button
-              type="submit"
-              class="btnLogin primary-btn w-100 text-center"
-            >
-              <a
-                class="btn_login text-decoration-none"
-                href="./user_profile1.html"
-                >Login</a
-              >
-            </button>
-            <p class="text-center mt-5">
-              <a href="./signIn.html" class="createNewAcc text-dark text-right"
-                >Create New Account</a
-              >
-            </p>
-          </div>
-        </form>
-      </div>
-      <div class="rightLogin">
-        <div class="right_header logoLogin d-flex align-items-center gap-5">
+        <div
+          class="right_header_user6 right_header_user6Login d-flex align-items-center gap-5"
+        >
           <div
             class="header_logo_user6 header_logo_user6_heade_user_newSupplierRegistration1"
           >
@@ -82,11 +48,55 @@
             />
           </div>
         </div>
-        <img
-          class="imgLogin"
-          src="./images/in_profile_images/bg-login.png"
-          alt=""
-        />
+      </header>
+      <div class="row container_login">
+        <div class="formLogin col-xs-10 col-sm-10 col-lg-6 col-xl-5 container">
+          <h3 class="titleLogin">Login</h3>
+          <form action="">
+            <div class="inputDiv">
+              <label class="d-block mb-3" for="UserName">User Name*</label>
+              <input type="text" placeholder="Email" id="UserName" />
+            </div>
+            <div class="inputDiv">
+              <label class="d-block mb-3" for="Password">Password*</label>
+              <input
+                value="12345"
+                type="password"
+                placeholder="Email"
+                id="Password"
+              />
+            </div>
+            <div>
+              <p class="forgetPass">
+                <a href="#" class="text-dark" href="#">Forget Password</a>
+              </p>
+              <button
+                type="submit"
+                class="btnLogin primary-btn w-100 text-center"
+              >
+                <a
+                  class="btn_login text-decoration-none"
+                  href="./user_profile1.html"
+                  >Login</a
+                >
+              </button>
+              <p class="text-center mt-5">
+                <a
+                  href="./signIn.html"
+                  class="createNewAcc text-dark text-right"
+                  >Create New Account</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="rightLogin col-6">
+          <img
+            class="imgLogin"
+            src="./images/in_profile_images/bg-login.png"
+            alt=""
+          />
+        </div>
       </div>
     </section>
     <script src="./js/bootstrap.bundle.min.js"></script>

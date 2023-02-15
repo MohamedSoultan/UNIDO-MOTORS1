@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/splide.min.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Start Bootstrap library files for css-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./css/global.css" />
+    <link type="text/css" rel="stylesheet" href="./css/media.css" />
     <!-- End Bootstrap library files  for css-->
     <title>Business Development</title>
   </head>
@@ -35,48 +32,50 @@
         <span></span>
         <span></span>
       </div>
-      <div class="navigation">
-        <div class="top-nav">
-          <div class="nav-login">
-            <img class="login_user" src="./images/Icon-user.svg" alt="" />
-            <a href="./login.html">login</a>
+      <div class="navigation_container">
+        <div class="navigation">
+          <div class="top-nav">
+            <div class="nav-login">
+              <img class="login_user" src="./images/Icon-user.svg" alt="" />
+              <a href="./login.html">login</a>
+            </div>
+            <div class="nav-languages">
+              <div><a href="#">العربية</a></div>
+              <div><a class="lang-en" href="#">EN</a></div>
+            </div>
+            <div class="social-links_menu">
+              <a href="#"><img src="./images/mobile-images/facebook.svg" /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/twitter.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/linkdin.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/youtube.svg" alt=""
+              /></a>
+            </div>
           </div>
-          <div class="nav-languages">
-            <div><a href="#">العربية</a></div>
-            <div><a class="lang-en" href="#">EN</a></div>
+          <div class="bottom-nav">
+            <ul class="list-links">
+              <li class="list-item"><a href="./index.html">Home page</a></li>
+              <li class="list-item">
+                <a href="./products.html">products</a>
+              </li>
+              <li class="list-item">
+                <a href="./businessDevelopment.html">Business development</a>
+              </li>
+              <li class="list-item">
+                <a href="./awareness_knowledge.html">Awareness & Knowledge</a>
+              </li>
+              <li class="list-item">
+                <a href="./Complaint1.html">Complaint</a>
+              </li>
+              <li class="list-item">
+                <a href="./FAQ.html">FAQ and Inquiries</a>
+              </li>
+            </ul>
           </div>
-          <div class="social-links_menu">
-            <a href="#"><img src="./images/mobile-images/facebook.svg" /></a>
-            <a href="#"
-              ><img src="./images/mobile-images/twitter.svg" alt=""
-            /></a>
-            <a href="#"
-              ><img src="./images/mobile-images/linkdin.svg" alt=""
-            /></a>
-            <a href="#"
-              ><img src="./images/mobile-images/youtube.svg" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="bottom-nav">
-          <ul class="list-links">
-            <li class="list-item"><a href="./index.html">Home page</a></li>
-            <li class="list-item">
-              <a href="./products.html">products</a>
-            </li>
-            <li class="list-item">
-              <a href="./businessDevelopment.html">Business development</a>
-            </li>
-            <li class="list-item">
-              <a href="./awareness_knowledge.html">Awareness & Knowledge</a>
-            </li>
-            <li class="list-item">
-              <a href="./Complaint1.html">Complaint</a>
-            </li>
-            <li class="list-item">
-              <a href="./FAQ.html">FAQ and Inquiries</a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
@@ -98,16 +97,16 @@
     </nav>
     <!-- End starter-sections -->
     <main class="businessDevelopmentContainer">
-      <section class="feasibilityCalculator container">
+      <section class="feasibilityCalculator container px-5">
         <h2 class="title_feasibilityCalculator headSection_businessDevelopment">
           Feasibility Calculator
         </h2>
-        <div class="d-flex align-items-center justify-content-between gap-5">
-          <div class="inputs">
+        <div class="row">
+          <div class="inputs col-xl-5">
             <h5 class="title_inputs title_box_calc">Inputs</h5>
             <hr />
-            <form class="form_inputs d-flex gap-5">
-              <div class="left_inputs_calc">
+            <form class="form_inputs row">
+              <div class="left_inputs_calc col-xxl-6 ">
                 <div class="inputDiv_inputs">
                   <label class="d-block mb-3" for="enclosure"
                     >*Facility Working Days per Year</label
@@ -147,7 +146,7 @@
                   </select>
                 </div>
               </div>
-              <div class="right_inputs_calc">
+              <div class="right_inputs_calc col-xxl-6 ">
                 <div class="inputDiv_inputs">
                   <label class="d-block mb-3" for="enclosure"
                     >*Facility Working Hours per Day</label
@@ -189,11 +188,15 @@
               </div>
             </form>
           </div>
-          <button class="primary-btn btnCalc d-flex align-items-center gap-3">
-            <a class="text-decoration-none text-light" href="#"> Calculate </a>
-            <img src="./images/Icon-calc-arrow-right.svg" alt="" />
-          </button>
-          <div class="outputs">
+          <div class="btnContainer col-xl-3 my-5">
+            <button class="primary-btn btnCalc">
+              <a class="text-decoration-none text-light" href="#">
+                Calculate
+              </a>
+              <img src="./images/Icon-calc-arrow-right.svg" alt="" />
+            </button>
+          </div>
+          <div class="outputs col-xl-4">
             <h5 class="title_outputs title_box_calc">Outputs</h5>
             <hr />
             <div class="text_outputs">
@@ -226,7 +229,7 @@
           </div>
         </div>
       </section>
-      <section class="limitationsSection text-center">
+      <section class="limitationsSection text-center px-5">
         <h2 class="title_limitations">Outputs limitations</h2>
         <p class="limitations_description container">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
@@ -237,7 +240,7 @@
           cum tempora consequuntur? Iure, excepturi.
         </p>
       </section>
-      <section class="financialInstitutions">
+      <section class="financialInstitutions px-4">
         <div class="container">
           <h2
             class="title_financialInstitutions headSection_businessDevelopment"
@@ -253,7 +256,7 @@
             maximus tortor lacinia. Praesent at augue lacus.
           </p>
           <div class="branding row">
-            <div class="col-4">
+            <div class="col  mb-5">
               <div class="box_card d-flex align-items-center gap-5">
                 <img src="images/brand1.png" alt="" />
                 <div class="text_brand">
@@ -277,7 +280,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col mb-5">
               <div class="box_card d-flex align-items-center gap-5">
                 <img src="images/brand2.png" alt="" />
                 <div class="text_brand">
@@ -301,7 +304,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col mb-5">
               <div class="box_card d-flex align-items-center gap-5">
                 <img src="images/brand1.png" alt="" />
                 <div class="text_brand">
@@ -430,7 +433,8 @@
       </div>
     </footer>
     <!--/////////////////////////////////////////////////////////////////////////////////////////////// End footer Section -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script type="module" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/bootstrap.bundle.min.js.map"></script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>

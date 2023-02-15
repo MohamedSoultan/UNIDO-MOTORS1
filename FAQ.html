@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/splide.min.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Start Bootstrap library files for css-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./css/global.css" />
+    <link type="text/css" rel="stylesheet" href="./css/media.css" />
     <!-- End Bootstrap library files  for css-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ and Inquiries</title>
@@ -67,48 +66,50 @@
         <span></span>
         <span></span>
       </div>
-      <div class="navigation">
-        <div class="top-nav">
-          <div class="nav-login">
-            <img class="login_user" src="./images/Icon-user.svg" alt="" />
-            <a href="./login.html">login</a>
+      <div class="navigation_container">
+        <div class="navigation">
+          <div class="top-nav">
+            <div class="nav-login">
+              <img class="login_user" src="./images/Icon-user.svg" alt="" />
+              <a href="./login.html">login</a>
+            </div>
+            <div class="nav-languages">
+              <div><a href="#">العربية</a></div>
+              <div><a class="lang-en" href="#">EN</a></div>
+            </div>
+            <div class="social-links_menu">
+              <a href="#"><img src="./images/mobile-images/facebook.svg" /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/twitter.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/linkdin.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./images/mobile-images/youtube.svg" alt=""
+              /></a>
+            </div>
           </div>
-          <div class="nav-languages">
-            <div><a href="#">العربية</a></div>
-            <div><a class="lang-en" href="#">EN</a></div>
+          <div class="bottom-nav">
+            <ul class="list-links">
+              <li class="list-item"><a href="./index.html">Home page</a></li>
+              <li class="list-item">
+                <a href="./products.html">products</a>
+              </li>
+              <li class="list-item">
+                <a href="./businessDevelopment.html">Business development</a>
+              </li>
+              <li class="list-item">
+                <a href="./awareness_knowledge.html">Awareness & Knowledge</a>
+              </li>
+              <li class="list-item">
+                <a href="./Complaint1.html">Complaint</a>
+              </li>
+              <li class="list-item">
+                <a href="./FAQ.html">FAQ and Inquiries</a>
+              </li>
+            </ul>
           </div>
-          <div class="social-links_menu">
-            <a href="#"><img src="./images/mobile-images/facebook.svg" /></a>
-            <a href="#"
-              ><img src="./images/mobile-images/twitter.svg" alt=""
-            /></a>
-            <a href="#"
-              ><img src="./images/mobile-images/linkdin.svg" alt=""
-            /></a>
-            <a href="#"
-              ><img src="./images/mobile-images/youtube.svg" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="bottom-nav">
-          <ul class="list-links">
-            <li class="list-item"><a href="./index.html">Home page</a></li>
-            <li class="list-item">
-              <a href="./products.html">products</a>
-            </li>
-            <li class="list-item">
-              <a href="./businessDevelopment.html">Business development</a>
-            </li>
-            <li class="list-item">
-              <a href="./awareness_knowledge.html">Awareness & Knowledge</a>
-            </li>
-            <li class="list-item">
-              <a href="./Complaint1.html">Complaint</a>
-            </li>
-            <li class="list-item">
-              <a href="./FAQ.html">FAQ and Inquiries</a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
@@ -231,50 +232,43 @@
       </section>
       <!-- End starter-sections -->
       <div class="containerInquiry">
-        <form class="containerComplaint container mx-auto">
+        <form class="containerComplaint container mx-auto row">
           <h2 class="titleInquiry">Inquiry</h2>
-          <div class="d-flex gap-3">
-            <div class="col-6">
-              <div class="inputDiv_user3">
-                <!-- select-->
-                <label class="d-block mb-3" for="select1">Company Name*</label>
-                <select class="bg-light" name="" id="select1">
-                  <option value="1">Company Name</option>
-                  <option value="1">motor</option>
-                  <option value="2">AC</option>
-                  <option value="3">Voltage</option>
-                </select>
-              </div>
-              <div class="inputDiv_user3">
-                <label class="d-block mb-3" for="flag here"
-                  >Phone Number*</label
-                >
-                <div class="d-flex gap-3">
-                  <img src="./images/in_profile_images/Group 351.png" alt="" />
-                  <input type="text" placeholder=" 0000" id="flag here" />
-                </div>
+
+          <div class="col-xs-12 col-sm-12 col-lg-6">
+            <div class="inputDiv_user3">
+              <!-- select-->
+              <label class="d-block mb-3" for="select1">Company Name*</label>
+              <select class="bg-light" name="" id="select1">
+                <option value="1">Company Name</option>
+                <option value="1">motor</option>
+                <option value="2">AC</option>
+                <option value="3">Voltage</option>
+              </select>
+            </div>
+            <div class="inputDiv_user3">
+              <label class="d-block mb-3" for="flag here">Phone Number*</label>
+              <div class="d-flex gap-3">
+                <img src="./images/in_profile_images/Group 351.png" alt="" />
+                <input type="text" placeholder=" 0000" id="flag here" />
               </div>
             </div>
-            <div class="col-6">
-              <div class="inputDiv_user3">
-                <label class="d-block mb-3" for="Motor Model"
-                  >Motor Model*</label
-                >
-                <input type="text" placeholder="Motor Model" id="Motor Model" />
-              </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-lg-6">
+            <div class="inputDiv_user3">
+              <label class="d-block mb-3" for="Motor Model">Motor Model*</label>
+              <input type="text" placeholder="Motor Model" id="Motor Model" />
+            </div>
 
-              <div class="inputDiv_user3 textarea_container mt-4">
-                <label class="d-block mb-3" for="textarea_massge"
-                  >Complaint*</label
-                >
-                <textarea class="bg-light" placeholder="Complaint"></textarea>
-              </div>
-              <div class="countText d-flex justify-content-end mt-1">
-                0/2000
-              </div>
-              <div class="btn_submitComplaint d-flex justify-content-end mt-5">
-                <button type="submit" class="primary-btn">Submit</button>
-              </div>
+            <div class="inputDiv_user3 textarea_container mt-4">
+              <label class="d-block mb-3" for="textarea_massge"
+                >Complaint*</label
+              >
+              <textarea class="bg-light" placeholder="Complaint"></textarea>
+            </div>
+            <div class="countText d-flex justify-content-end mt-1">0/2000</div>
+            <div class="btn_submitComplaint d-flex justify-content-end mt-5">
+              <button type="submit" class="primary-btn">Submit</button>
             </div>
           </div>
         </form>
@@ -399,5 +393,6 @@
         });
       }
     </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

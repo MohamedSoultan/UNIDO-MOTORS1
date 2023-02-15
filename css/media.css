@@ -24,6 +24,9 @@
   .primary-heading {
     font-size: 4.2rem;
   }
+  .guides {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -44,6 +47,12 @@
   }
   .hero-input {
     width: 90%;
+  }
+  .rightLogin {
+    display: none;
+  }
+  .formLogin {
+    width: 100%;
   }
 }
 /* 800px */
@@ -113,8 +122,7 @@
     z-index: 1;
   }
   /* 
-  1- انقل النفجيشن في كل السكاشن وتشوف حل ليها ...
-  2- اعدل ال news section
+  3-الهيدر بتاعت اللوجين
   */
 
   .nav-container.active .logo {
@@ -192,6 +200,31 @@
   }
   .hero-input {
     width: 80%;
+  }
+  .head_content_uesr {
+    display: block !important;
+    text-align: center;
+    gap: 12px;
+  }
+  .head_content_uesr h5 {
+    margin-bottom: 24px;
+  }
+  .head_content_uesr img {
+    max-width: 100%;
+  }
+  .label_upload_btn {
+    width: 50%;
+  }
+  .btnComplaint1 {
+    margin-top: 24px;
+  }
+
+  .container_logo_newSupplierRegistration1 {
+    padding: 24px;
+    margin: 0;
+  }
+  .formLogin {
+    padding: 150px 48px 24px !important;
   }
 }
 
@@ -451,7 +484,7 @@
   }
   .pagination-container {
     justify-content: center;
-    margin: 24px;
+    margin: 24px auto;
   }
   .pagination {
     margin: 0;
@@ -506,5 +539,14 @@
   .logo-footer {
     justify-content: center;
     margin: 0 0 12px 0;
+  }
+  .inputs {
+    display: block !important;
+  }
+  .logo_newSupplierRegistration1 {
+    padding: 48px 14px 24px;
+  }
+  .backToWebsite {
+    display: none;
   }
 }
