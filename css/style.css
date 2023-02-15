@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 64px 20px;
+  padding: 40px 48px 20px;
 }
 .logo {
   display: flex;
@@ -283,7 +283,7 @@
 .menu-icon.active span:first-child,
 .menu-icon.active span:last-child {
   top: 8px;
-  background-color: red;
+  background-color: #1a1a1a;
 }
 .menu-icon.active span:first-child {
   transform: rotate(45deg);

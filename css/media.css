@@ -48,7 +48,10 @@
 }
 /* 800px */
 @media (max-width: 50em) {
-  .nav-container,
+  .nav-container {
+    display: flex !important;
+    padding: 24px;
+  }
   .nav-container.show {
     display: flex !important;
     padding: 24px;
@@ -62,11 +65,11 @@
     /* content: url(../images/mobile-images/logo-mobile.png); */
     height: 80px;
   }
-  .logo-text {
-    padding: 0 12px;
-  }
   .lo {
     font-size: 18px;
+  }
+  .logo {
+    margin-bottom: 0;
   }
   .lang-en::after {
     content: "GLISH";
@@ -75,6 +78,8 @@
     content: url(../images/mobile-images/Icon\ feather-user.svg);
   }
   .social-links_menu {
+    border-top: 1px solid #aaa;
+    padding-top: 12px;
     position: relative;
     opacity: 1;
     display: flex;
@@ -86,15 +91,17 @@
     z-index: 11;
   }
   .nav-container.show .navigation {
-    display: none ;
+    display: none;
   }
   .navigation_container {
     display: none;
   }
-  .nav-container.active .navigation{
-    display: block;
+  .navigation_container.active .navigation {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
   }
-  .nav-container.active .navigation_container {
+  .navigation_container.active {
     display: flex;
     position: absolute;
     width: 100%;
@@ -103,44 +110,43 @@
     bottom: 0;
     color: #1a1a1a;
     background-color: #fff;
-    z-index: 10;
+    z-index: 1;
   }
   /* 
-  1- انقل النفجيشن في كل السكاشن وتشوف حل ليها
-  4- تعدل التوب ناف تنزله تحت المنيو ليست
-  3- ننقل الاكتف من ال ناف كونتينر الي النافجيشن كونتاينر
+  1- انقل النفجيشن في كل السكاشن وتشوف حل ليها ...
+  2- اعدل ال news section
   */
 
   .nav-container.active .logo {
-    width: 100%;
-    z-index: 30;
+    z-index: 999;
     color: var(--main-color);
   }
-  .nav-container.active .top-nav {
-    margin-top: 24px;
-    text-align: left;
-    flex-direction: column;
-    order: 2;
-    gap: 0;
+  .top-nav {
+    position: relative;
+    display: block;
+    right: 0;
+    top: 0;
+    margin: 0 24px 24px;
+    grid-row: 2;
   }
-  .nav-container.active .bottom-nav {
-    margin: 0 24px;
-    margin-top: 90px;
+  .bottom-nav {
+    margin: 24px;
+    margin-top: 115px;
     border-top: none;
     border-bottom: 1px solid #aaa;
-    text-align: left !important;
   }
-  .nav-container.active .nav-languages .div {
+  .nav-languages .div {
     margin-bottom: 12px;
   }
-  .nav-container.active .bottom-nav li {
-    font-size: 20px;
-    margin-bottom: 24px;
+  .bottom-nav li {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
   }
-  .nav-container.active .nav-languages {
+  .nav-languages {
     display: block;
   }
-  .nav-container.active .logo-text {
+  .logo-text {
     border-right: 1px solid #aaa;
   }
   .list-links,
@@ -265,8 +271,6 @@
   }
   /* End sucss section */
 
-  /* End products section */
-
   /* Start hero section */
   .header-container {
     width: 110%;
@@ -300,7 +304,7 @@
   /*Start media Navgation */
 
   .logo-text {
-    padding: 0 12px;
+    padding-right: 12px;
   }
   .lo {
     font-size: 18px;
@@ -312,11 +316,9 @@
     content: url(../images/mobile-images/Icon\ feather-user.svg);
   }
   .social-links_menu {
-    position: relative;
-    opacity: 1;
+    justify-content: center;
     display: flex;
-    gap: 24px;
-    margin-top: 24px;
+    gap: 32px;
   }
 
   .img-car_footer {
@@ -367,6 +369,9 @@
   .right-corner-content::before {
     top: 130px;
     height: 350px;
+  }
+  .nav-container {
+    padding: 24px 0;
   }
   /* Start Footer */
   .footer-section {
