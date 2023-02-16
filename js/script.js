@@ -11,7 +11,6 @@ menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("active");
 });
 
-console.log(navigationContainer);
 //End meun toggle
 
 var swiper = new Swiper(".slide-content", {

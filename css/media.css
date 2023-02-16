@@ -35,6 +35,7 @@
     display: block !important;
   }
   .top-nav {
+    display: block;
     position: absolute;
     right: 64px;
     top: 102px;
@@ -57,6 +58,31 @@
 }
 /* 800px */
 @media (max-width: 50em) {
+  .login-lang {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-login {
+    order: 1;
+    margin-top: 20px;
+  }
+  .nav-languages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .lang-en {
+    display: flex;
+    order: -1;
+  }
+  .nav-languages .lang-en:focus::before {
+    width: 20px;
+    bottom: 50px;
+  }
+  .nav-languages .lang-ar:focus::before {
+    width: 20px;
+  }
   .nav-container {
     display: flex !important;
     padding: 24px;
@@ -86,14 +112,16 @@
   .login_user {
     content: url(../images/mobile-images/Icon\ feather-user.svg);
   }
-  .social-links_menu {
+  .container-social_icons {
     border-top: 1px solid #aaa;
-    padding-top: 12px;
+    display: block;
+    margin-top: 24px;
     position: relative;
-    opacity: 1;
+  }
+  .social-links_menu {
+    padding-top: 12px;
     display: flex;
     gap: 24px;
-    margin-top: 24px;
   }
   .menu-icon {
     display: block !important;
@@ -130,8 +158,8 @@
     color: var(--main-color);
   }
   .top-nav {
-    position: relative;
     display: block;
+    position: relative;
     right: 0;
     top: 0;
     margin: 0 24px 24px;
@@ -151,14 +179,11 @@
     font-weight: bold;
     margin-bottom: 18px;
   }
-  .nav-languages {
-    display: block;
-  }
+
   .logo-text {
     border-right: 1px solid #aaa;
   }
-  .list-links,
-  .nav-languages {
+  .list-links {
     display: block;
   }
   .nav-login a,
