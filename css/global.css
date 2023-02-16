@@ -105,9 +105,11 @@ a:hover {
   transform: scale(1.2) translateX(10px);
   color: var(--main-color);
 }
-/* .secondary-btn:hover svg:hover {
+.secondary-btn:hover #Icon_ionic-ios-arrow-forward {
   fill: var(--main-color);
-} */
+  color: var(--main-color);
+  stroke: var(--main-color);
+}
 .secondary-btn:hover a {
   color: var(--main-color);
 }

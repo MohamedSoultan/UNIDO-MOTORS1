@@ -95,7 +95,6 @@ var platform_slider = new Splide(".platform_slider", {
   breakpoints: {
     576: {
       perPage: 1,
-      pagination: false,
     },
     992: {
       perPage: 2,

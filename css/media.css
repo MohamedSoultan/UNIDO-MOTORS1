@@ -97,7 +97,6 @@
   }
   /*Start media Navgation */
   .src-logo {
-    /* content: url(../images/mobile-images/logo-mobile.png); */
     height: 80px;
   }
   .lo {
@@ -149,10 +148,6 @@
     background-color: #fff;
     z-index: 1;
   }
-  /* 
-  3-الهيدر بتاعت اللوجين
-  */
-
   .nav-container.active .logo {
     z-index: 999;
     color: var(--main-color);
@@ -276,20 +271,45 @@
   .news-events {
     padding: 200px 0px 100px;
     background-image: linear-gradient(
-        rgba(55, 55, 55, 0.8),
-        rgba(55, 55, 55, 0.8)
+        rgba(34, 34, 34, 0.9),
+        rgba(34, 34, 34, 0.9)
       ),
       url(../images/mobile-images/bg-news-mobile.png);
   }
   .news-head {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+    font-size: 4rem;
   }
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    display: none;
-  }
+
   .slide-content {
     margin: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+    overflow: visible;
+  }
+  .swiper-button-next:after {
+    position: absolute;
+    top: -200%;
+  }
+  .swiper-button-prev:after {
+    position: absolute;
+    top: -200% !important;
+  }
+  .card-image {
+    display: flex;
+    justify-content: center;
+  }
+  .card-image img {
+    width: 80%;
+  }
+  .card::before {
+    top: -1.5rem;
+    left: 50px;
+    z-index: 10;
+  }
+  .card-content {
+    width: 80%;
+    margin: auto;
   }
   /* End News section */
 
