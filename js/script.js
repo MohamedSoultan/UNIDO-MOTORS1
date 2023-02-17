@@ -43,49 +43,7 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
-//  Caruosel slider has 2 btn above slider
-let next = document.querySelector(".next");
-let perv = document.querySelector(".prev");
-
-// perv and next bts
-next.addEventListener("click", () => {
-  plusSlides(1);
-});
-perv.addEventListener("click", () => {
-  plusSlides(-1);
-});
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-}
 // platform
-
 var platform_slider = new Splide(".platform_slider", {
   type: "loop",
   prev: "splide__arrow--prev .btn-n",
@@ -105,7 +63,7 @@ var platform_slider = new Splide(".platform_slider", {
   },
 });
 platform_slider.mount();
-// platform
+// end platform
 
 var acc = document.getElementsByClassName("accordion_btn");
 var i;

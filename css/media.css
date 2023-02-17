@@ -14,19 +14,6 @@
     margin-top: 48px;
     padding: 0 2.4rem;
   }
-
-  .sucss {
-    grid-template-columns: 1fr;
-  }
-  .mySlides {
-    padding: 24px;
-  }
-  .primary-heading {
-    font-size: 4.2rem;
-  }
-  .guides {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -54,6 +41,23 @@
   }
   .formLogin {
     width: 100%;
+  }
+}
+@media (max-width: 60em) {
+  .card_sucss {
+    max-width:100% !important;
+  }
+  .left-sucss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .left-sucss button {
+    margin-right: 24px;
+  }
+  .btn_group_sucss_home {
+    display: none;
   }
 }
 /* 800px //////////////////////////////////////////////////////////////////////////////////////////////*/
